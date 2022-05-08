@@ -56,7 +56,13 @@ public class StudentTest {
         assertNotEquals(new Double(3.3), studentService.averageMark());
     }
     @Test
-    public void failedTest(){
+    public void failedTestNumber1(){
+        assertEquals(4, studentService.getStudents().size());
+        studentService.getStudents().add(new Student(1, 1, "a"));
+        assertEquals(3, studentService.getStudents().size());
+    }
+    @Test
+    public void failedTestNumber2(){
         assertEquals(4, studentService.getStudents().size());
         studentService.getStudents().add(new Student(1, 1, "a"));
         assertEquals(3, studentService.getStudents().size());
