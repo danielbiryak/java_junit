@@ -77,7 +77,7 @@
         <artifactId>allure-maven</artifactId>
         <version>2.10.0</version>
         <configuration>
-          <reportDirectory>${project.build.directory}/target/allure-report</reportDirectory>
+          <reportDirectory>${project.build.directory}/allure-report</reportDirectory>
           <reportVersion>${allure.version}</reportVersion>
           <allureDownloadUrl>https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/${allure.version}/allure-commandline-${allure.version}.zip</allureDownloadUrl>
         </configuration>
