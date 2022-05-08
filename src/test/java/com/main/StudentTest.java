@@ -67,4 +67,10 @@ public class StudentTest {
         studentService.getStudents().add(new Student(1, 1, "a"));
         assertEquals(3, studentService.getStudents().size());
     }
+    @Test
+    public void failedTestNumber3(){
+        assertEquals(4, studentService.getStudents().size());
+        studentService.getStudents().add(new Student(1, 1, "a"));
+        assertEquals(3, studentService.getStudents().size());
+    }
 }
