@@ -1,3 +1,4 @@
 .vscode/
 .allure/
 target/
+/allure-results
